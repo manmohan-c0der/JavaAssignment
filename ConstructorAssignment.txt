@@ -1,0 +1,80 @@
+Q1- What is a Constructor ?
+
+ans-1 Object creation is not enough, compulsorily we should perform initialization then only the object is in a
+position to provide the response properly
+1 Whenever we are creatin! an object some piece of the code will be executed automatically to perform
+initialization of an object. This piece of code is nothin! but a constructorY
+1 Main objective of the constructor is nothin! but initialisation of ObjectY
+
+ans -2  A class can contain more than one constrmctor and all these constrmctors have the same name they differ
+only in the type of argmment, hence these constrmctors are considered as "Overloaded constrmctor".
+Eg
+class Test {
+Test(domble d) {
+SystemKomtKprintln("domble argmment constrmctor");
+}
+Test(int i) {
+this(10K5);
+SystemKomtKprintln("int argmment constrmctor");
+}
+Test() {
+this(10);
+SystemKomtKprintln("no argmment constrmctor");
+}
+}
+pmblic class MainApp {
+pmblic static void main(String[] args) throws Exception {
+Test t1U new Test();//domble int no argmment constrmctor
+Test t2U new Test(10);// domble int argmment constrmctor
+Test t3U new Test(10K5);//domble argmment constrmctor
+}
+}
+
+
+ans -2 
+
+ yes we call subclass constructor in superclass constructor 
+
+
+ans-3
+  the Program give compiler time error
+
+ans-4 
+
+The NO-arg constructor just like a default constructor but it is written by programmer and no any parameter pass in constructor 
+
+ans-5
+
+the No-arg constructor written by the programmmer ans defualt constructor automatically called by compiler 
+
+ans -6
+
+A class can contain more than one constrmctor and all these constrmctors have the same name they differ
+only in the type of argmment, hence these constrmctors are considered as "Overloaded constrmctor".
+
+ans-7
+For every java class constructor concept is applicableY
+1 If we donZt write any constructor, then the compiler will !enerate a default constructorY
+1 If we write at least one constructor then the compiler wonZt !enerate any default constructor, so we say
+every java class will have a compiler generated default constructor or pro!rammer written constructor but
+not both simultaneously.
+
+Example :
+
+class Main {
+  private String name;
+
+  // constructor
+  Main() {
+    System.out.println("Constructor Called:");
+    name = "Programiz";
+  }
+
+  public static void main(String[] args) {
+
+    // constructor is invoked while
+    // creating an object of the Main class
+    Main obj = new Main();
+    System.out.println("The name is " + obj.name);
+  }
+}
