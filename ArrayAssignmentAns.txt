@@ -1,0 +1,67 @@
+ans 1
+ It refers to index collection of fixed number of homogeneous data elements.
+
+Single variable holding multiple values which improves readability of the
+program.
+
+ans 2
+
+int[] a;//recommended to use as variable is separated from type.
+● int a[];
+● int []a;
+● int[6] a; // compile time error. we cannot specify the size.
+
+ans 3
+
+I can't change the size of the array after it's constructed
+
+ans 4
+We can declare an array without size but before using it needs to be initialized
+
+ans 5
+ java will assign the default value 0 to each element of the array in the case of an int array. Similarly, in the case of a boolean array, it will be false, in the case of a String array the default value is null in java, and in the case of a char array, the default value is Unicode (\u0000).
+
+ans 6
+We can declare one-dimensional array and store values (or elements) directly at the time of its declaration, like this: int marks[ ] = { 90, 97, 95, 99, 100 }; // declare marks[ ] and initialize with five values.
+
+ans 7
+2D-Array =1D-Array + 1D-Array
+(ref) (data)
+Declaration(All are valid)
+
+ArrayCon7truction
+
+ArrayInitali7ation
+int[][] a= {{10},{20},{30}};
+int[] b={100,200,300};
+b= a; //CE: incompatible type
+
+int[][] a ;
+int a[][];
+int [][]a;
+int[] []a;
+int[] a[];
+int []a[];
+
+int[][] a =new int[3][2];
+or
+int[][] a= new int[3][];
+a[0]=new int[5];
+a[1]=new int[3];
+a[2]=new int[1];
+
+a[0][0] = 10;
+a[2][3] = 5;
+
+program '
+
+public class ms {
+    public static void main(String[] args)
+    {
+ 
+        int[][] arr = new int[10][20];
+        arr[0][0] = 1;
+ 
+        System.out.println("arr[0][0] = " + arr[0][0]);
+    }
+}
